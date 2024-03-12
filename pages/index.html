@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Used Cars Marketplace</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../assets/CARS.svg" alt="Company Logo" id="logo">
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/login.html">Login</a></li>
+            <li><a href="/pages/register.html">Register</a></li>
+        </ul>
+    </nav>
+    
+
+    <section id="video-slider" class="video-slider">
+        <video autoplay muted loop id="video-background">
+            <source src="../assets/Pexels-Anthony-Shkraba.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </section>
+
+    <section id="marketing-materials">
+        <div id="user-welcome-container">
+            
+        </div>
+    
+        <article class="marketing-article">
+            <h2>Our Best Deals</h2>
+            <p>Check out our best deals on used cars...</p>
+        </article>
+    </section>
+
+    <section id="search-filters" class="search-filters">
+        <label for="car-make" class="filter-label">Make:</label>
+        <select id="car-make" class="filter-select"></select>
+
+        <label for="car-model" class="filter-label">Model:</label>
+        <select id="car-model" class="filter-select" disabled></select>
+
+        <label for="car-year" class="filter-label">Year:</label>
+        <select id="car-year" class="filter-select"></select>
+
+        <label for="price-range" class="filter-label">Price Range:</label>
+        <input type="range" id="price-range" class="filter-range" min="5000" max="100000" step="1000">
+        <span id="price-range-value" class="filter-range-value">5000 - 100000</span>
+
+        <button id="search-button" class="filter-button">Search</button>
+    </section>
+
+    <div id="cq-search-results" class="car-results">
+
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2023 Used Cars Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/register.css">
+    <title>Register - Luxury Car Parts</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/CARS.svg" alt="Company Logo" id="logo">
+        <nav id="navbar">
+            <ul>
+                <li><a href="/pages/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/login.html">Login</a></li>
+                <li><a href="/pages/register.html">Register</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="register-content">
+        <h2>Register</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <button type="submit" id="register-btn" class="action-btn">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Used Cars Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/register.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</body>
+</html>

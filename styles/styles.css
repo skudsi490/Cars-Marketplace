@@ -1,0 +1,342 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    color: #020202;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Logo */
+header {
+    background-color: #F5F5F5;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#logo {
+    height: 80px;
+}
+
+/* Navbar */
+nav#navbar {
+    background-color: #65299D;
+    overflow: hidden;
+}
+
+nav#navbar ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav#navbar ul li {
+    margin: 0 15px;
+}
+
+nav#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav#navbar ul li a:hover, nav#navbar ul li a:focus {
+    background-color: #020202;
+}
+
+/* Video Slider Placeholder */
+#video-slider {
+    position: relative;
+    overflow: hidden;
+    height: 50vh; 
+    max-height: 500px; 
+}
+
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/* Marketing Materials */
+#marketing-materials article {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+#marketing-materials article:hover {
+    transform: translateY(-5px);
+}
+
+/* Search Filters Enhancement */
+#search-filters {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#search-filters .filter-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #020202;
+    display: block;
+}
+
+#search-filters .filter-select, 
+#search-filters .filter-range {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+#search-filters .filter-select:focus,
+#search-filters .filter-range:focus {
+    border-color: #65299D;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+#search-filters .filter-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #65299D;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#search-filters .filter-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #65299D;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#search-filters .filter-range-container {
+    width: 100%;
+    text-align: center;
+}
+
+#search-filters .filter-range-value {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #020202;
+    font-weight: bold;
+}
+
+#search-filters .filter-button {
+    background-color: #65299D;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#search-filters .filter-button:hover {
+    background-color: #020202;
+}
+
+
+/* Car Results */
+#cq-search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.car-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    width: calc(50% - 40px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.car-card h3, .car-card p {
+    margin: 0 0 10px 0;
+}
+
+/* Offer Button */
+.car-card .offer-button {
+    background-color: #65299D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.car-card .offer-button:hover {
+    background-color: #020202;
+}
+
+/* Welcome Message */
+#user-welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 20px;
+    white-space: nowrap; 
+}
+
+.logout-button {
+    background-color: #65299D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.logout-button:hover {
+    background-color: #020202;
+}
+
+footer {
+    background-color: #65299D;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .car-card {
+        width: calc(100% - 40px); 
+    }
+
+    nav#navbar ul li {
+        margin: 0 10px;
+    }
+
+    #search-filters {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #video-slider {
+        height: 40vh; 
+    }
+
+    #video-background {
+        object-position: center; 
+    }
+
+    .welcome-message {
+        font-size: 1.2rem; 
+        margin-right: 10px;
+    }
+
+    .logout-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav#navbar ul {
+        flex-direction: column;
+    }
+
+    nav#navbar ul li {
+        margin: 5px 0;
+    }
+
+    #video-slider {
+        height: 30vh; 
+    }
+
+    #user-welcome-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-message {
+        font-size: 1rem; 
+        margin: 0 0 10px 0;
+    }
+
+    .logout-button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+}

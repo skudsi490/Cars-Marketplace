@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/CARS.svg" alt="Company Logo" id="logo">
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/login.html">Login</a></li>
+            <li><a href="/pages/register.html">Register</a></li>
+        </ul>
+    </nav>
+    
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Car Details Card -->
+                <div class="card text-bg-light mb-3">
+                    <img id="carImage" src="/assets/TR4-2020.webp" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title" id="carTitle">Car Model Name</h5>
+                        <p class="card-text" id="carDetails">Car details...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Contact Form -->
+                <form id="contactForm">
+                    <h3>Make an Offer</h3>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="offer" class="form-label">Your Offer ($)</label>
+                        <input type="number" class="form-control" id="offer" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Offer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

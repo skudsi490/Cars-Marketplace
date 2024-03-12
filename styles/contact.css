@@ -1,0 +1,28 @@
+.container {
+    padding-top: 20px;
+}
+
+.card {
+    max-width: 100%;
+}
+
+#contactForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm h3 {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #65299D;
+    border-color: #65299D;
+}
+
+.btn-primary:hover {
+    background-color: #020202;
+    border-color: #020202;
+}
